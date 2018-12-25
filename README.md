@@ -30,6 +30,17 @@ ubuntu:
     sudo fc-cache -fv
 ```
 
+Ruby版本
+Ruby >~ 1.9.3:
+亲自测试过: 2.4.0
+[rvm install ruby](https://ruby-china.org/wiki/rvm-guide)
+
+bundler版本:
+bundler >~ 1.13.3
+亲自测试过:
+
+    gem install bundler --version 1.13.3
+
 Configuration
 -------------
 
@@ -87,6 +98,8 @@ To run unit tests, first create `test.rb` from the template file `config/test.rb
 
 Note
 -------
+
+    cp config/initializers/predoc.rb.default config/initializers/predoc.rb
 
     bundle install --path vendor/bundle
 
